@@ -5,7 +5,15 @@ html {
   font-size: 15px;
 }
 
+body {
+  background-color: #ffefef;
+}
+
 h1,
 h2 {
   font-family: 'Playfair Display', serif;
+}
+
+.content {
+  background-color: #ffffff;
 }
