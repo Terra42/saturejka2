@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap&subset=latin-ext');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -7,6 +11,9 @@ html {
 
 body {
   background-color: #ffefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1,
@@ -14,6 +21,102 @@ h2 {
   font-family: 'Playfair Display', serif;
 }
 
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+
+header p {
+  width: 70%;
+}
+
+main {
+  width: 80vw;
+}
+
+.logo {
+  padding-top: 2vh;
+  width: 50%;
+}
+
 .content {
   background-color: #ffffff;
+  padding: 4rem;
+}
+
+.intro {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  padding: 4vh 0;
+}
+
+.gallery img {
+  width: 25%;
+  margin: 0 1.5vw;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding-bottom: 4vh;
+}
+
+.intro-text__first {
+  display: flex;
+}
+
+.intro-text__second {
+  display: flex;
+}
+
+.intro-text p {
+  flex-basis: 50%;
+  padding: 0 1vw;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__picture--second {
+  order: 2;
+}
+
+.item__text {
+  font-size: 13px;
+}
+
+.item__picture {
+  width: 40%;
+}
+
+.item__content {
+  flex-basis: 50%;
+}
+
+.item__content--second {
+  text-align: right;
+}
+
+.item__button {
+  border: none;
+  background-color: #ffefef;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 4vh 0;
+  width: 60%;
 }
